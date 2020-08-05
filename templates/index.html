@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Webpage</title>
+</head>
+<body>
+    <ul id="cias">
+    {% for item in files %}
+        <li><a href="/files/{{ item }}">{{ item }}</a></li>
+        <img src="/img/{{ item }}" />
+    {% endfor %}
+    </ul>
+
+    {{ a_variable }}
+
+    {# a comment #}
+</body>
+</html>
