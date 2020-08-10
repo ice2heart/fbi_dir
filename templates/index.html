@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Webpage</title>
+    <title>CIA</title>
 </head>
 <body>
     <ul id="cias">
-    {% for item in files %}
-        <li><a href="/files/{{ item }}">{{ item }}</a></li>
-        <img src="/img/{{ item }}" />
-    {% endfor %}
+        {{range .Files}}
+            <li><a href="/files/{{ . }}">{{ . }}</a></li>
+            <img src="/img/{{ . }}" />
+        {{ end }}
     </ul>
-
-    {{ a_variable }}
-
-    {# a comment #}
 </body>
 </html>
