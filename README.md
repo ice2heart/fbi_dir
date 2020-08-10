@@ -7,6 +7,11 @@
 
 ## installation 
 
+```
+go get github.com/ice2heart/fbi_dir
+```
+
+
 
 ## How to run
 
