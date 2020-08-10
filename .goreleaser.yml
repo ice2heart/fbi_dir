@@ -1,0 +1,4 @@
+before:
+  hooks:
+  - go mod download
+  - packr2
